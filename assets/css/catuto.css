@@ -105,13 +105,43 @@ h3 { letter-spacing: -0.025em; }
   .contact-panel { padding: 40px; }
 }
 @media (max-width: 767px) {
+  .section { text-align: center; }
+  .section-heading { width: 100%; align-items: center; }
+  .section-heading h2 { max-width: 20ch; margin-inline: auto; }
+  .section-label { justify-content: center; }
+  .about-content { align-items: stretch; }
+  .attributes li { justify-content: center; }
+  .skill-card { align-items: center; text-align: center; }
+  .technology-band { flex-direction: column; align-items: center; }
+  .technology-band ul { align-items: center; text-align: center; }
+  .timeline { padding-left: 0; border-left: 0; }
+  .timeline-item { align-items: center; text-align: center; }
+  .timeline-item::before { display: none; }
+  .job-meta, .job-detail { width: 100%; align-items: center; }
+  .job-responsibilities { padding-left: 0; list-style-position: inside; }
+  .job-tools { width: 100%; }
+  .education-list .education-item { align-items: center; text-align: center; }
+  .learning-list { padding-left: 0; list-style-position: inside; text-align: center; }
+  .personal-social { justify-content: center; }
+  .personal-instagram { flex-direction: column; margin-inline: auto; }
+  .personal-social-copy { align-items: center; text-align: center; }
+  .personal-social-copy strong { justify-content: center; }
+  .contact-copy { align-items: center; }
+  .social-list, .social-item, .email-link { justify-content: center; }
+  .email-link { width: 100%; }
   .header-inner, .site-header.is-scrolled .header-inner { min-height: 70px; padding-block: 10px; }
   .site-header { padding-block: 0; }
   .brand-copy strong { font-size: 10px; }
   .brand-copy > span { font-size: 8px; }
   .hero { min-height: auto; padding-top: 300px; padding-bottom: 48px; background-size: auto 355px; background-position: 70% top; }
-  .hero::before { background: linear-gradient(0deg, #080c15 0%, #080c15 46%, transparent 76%); }
-  .hero-content { max-width: none; gap: 22px; }
+  .hero::before { background: linear-gradient(180deg, transparent 180px, #080c15 355px); }
+  .hero-content { width: 100%; max-width: 100%; gap: 22px; align-items: center; }
+  .hero-content > * { min-width: 0; max-width: 100%; }
+  .hero-content p { text-wrap: pretty; }
+  .hero .eyebrow, .hero .location { justify-content: center; }
+  .hero .eyebrow { flex-wrap: wrap; }
+  .hero .text-link { align-self: center; }
+  .hero-actions { width: 100%; max-width: 360px; }
   .hero h1 { font-size: clamp(40px, 10.6vw, 60px); }
   .hero-actions .button { width: 100%; }
   .metrics { gap: 24px; }
@@ -121,13 +151,14 @@ h3 { letter-spacing: -0.025em; }
   .companies-list .company-logo-tile { width: auto; }
   .skill-card { padding: 26px; }
   .contact-panel { padding: 28px 22px; }
-  .footer-inner { align-items: flex-start; }
-  .header-top { gap: 8px; }
+  .footer-inner { align-items: center; text-align: center; }
+  .header-top { gap: 8px; justify-content: center; flex-wrap: wrap; }
+  .site-nav > a { justify-content: center; text-align: center; }
   .header-tools { gap: 8px; }
   .brand-monogram { font-size: 21px; }
   .brand-copy strong { font-size: 9px; }
   .brand-copy > span { font-size: 7px; }
-  .brand { gap: 8px; }
+  .brand { gap: 8px; flex: 0 1 auto; }
   .language-switch a { min-width: 32px; min-height: 40px; }
   .menu-toggle { width: 40px; height: 46px; }
   .education-list { grid-template-columns: minmax(0, 1fr); }
