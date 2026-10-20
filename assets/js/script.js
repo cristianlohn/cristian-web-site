@@ -6,9 +6,10 @@
   const nav = document.getElementById("navegacao");
   if (!header || !toggle || !nav) return;
   const compact = window.matchMedia("(max-width: 1200px)");
+  const english = document.documentElement.lang === "en";
   const setOpen = (open, restoreFocus = false) => {
     toggle.setAttribute("aria-expanded", String(open));
-    toggle.setAttribute("aria-label", open ? "Fechar menu" : "Abrir menu");
+    toggle.setAttribute("aria-label", english ? (open ? "Close menu" : "Open menu") : (open ? "Fechar menu" : "Abrir menu"));
     nav.hidden = compact.matches && !open;
     if (restoreFocus) toggle.focus();
   };
@@ -40,6 +41,18 @@
   compact.addEventListener("change", synchronize);
   header.classList.add("menu-enhanced");
   synchronize();
+})();
+
+// Native language links work without JavaScript; preserve the section when enhanced.
+(() => {
+  const links = document.querySelectorAll('[data-language]');
+  const updateLinks = () => links.forEach(link => {
+    const url = new URL(link.getAttribute('href'), location.href);
+    url.hash = document.getElementById(location.hash.slice(1)) ? location.hash : '';
+    link.href = url.href;
+  });
+  updateLinks();
+  window.addEventListener('hashchange', updateLinks);
 })();
 
 // Match Catuto's compact header and once-only scroll reveals.
