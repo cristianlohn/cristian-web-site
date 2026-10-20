@@ -1,0 +1,10 @@
+
+/* Forma Studio fonts v1 */
+@font-face{font-family:"Arial";font-style:normal;font-weight:400;font-stretch:normal;font-display:swap;src:url("arial-7dac2824/arialmt-303f28c8610f.woff2") format("woff2");}
+
+@font-face{font-family:"Arial";font-style:normal;font-weight:700;font-stretch:normal;font-display:swap;src:url("arial-7dac2824/arial-boldmt-6e10bee51fb8.woff2") format("woff2");}
+
+@font-face{font-family:"Arial";font-style:italic;font-weight:700;font-stretch:normal;font-display:swap;src:url("arial-7dac2824/arial-bolditalicmt-fb4d1d207713.woff2") format("woff2");}
+
+@font-face{font-family:"Arial";font-style:italic;font-weight:400;font-stretch:normal;font-display:swap;src:url("arial-7dac2824/arial-italicmt-93b92c125181.woff2") format("woff2");}
+/* End Forma Studio fonts */

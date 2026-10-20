@@ -1,0 +1,39 @@
+/* Valores neutros de bootstrap visual. Substituir após o primeiro briefing. */
+
+
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; background: var(--color-bg); color: var(--color-text); font-family: var(--font-body); font-weight: var(--font-weight-body); font-size: var(--font-body-size); }
+img, svg { display: block; max-width: 100%; }
+img { height: auto; }
+button, input, select, textarea { font: inherit; }
+h1, h2, h3, h4, h5, h6 { margin: 0; color: var(--color-title); font-family: var(--font-heading); font-weight: var(--font-weight-heading); line-height: var(--line-height-heading); overflow-wrap: break-word; }
+h1 { font-size: var(--font-h1); }
+h2 { font-size: var(--font-h2); }
+h3 { font-size: var(--font-h3); }
+h4, h5, h6 { font-size: var(--font-body-size); }
+p { margin: 0; line-height: var(--line-height-body); overflow-wrap: break-word; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 4px; }
+
+.section { display: flex; flex-direction: column; position: relative; width: auto; padding-block: var(--section-space); padding-inline: var(--page-gutter); }
+.container { display: flex; flex-direction: column; width: 100%; min-width: 0; max-width: var(--container-max); margin-inline: auto; padding-inline: 0; }
+.starter { display: flex; flex-direction: column; align-items: flex-start; gap: var(--layout-gap); }
+.starter > p { width: 640px; max-width: 100%; }
+.eyebrow { font-size: var(--font-small); font-weight: 500; }
+
+@media (max-width: 1440px) {
+  
+}
+
+@media (max-width: 1024px) {
+  
+}
+
+@media (max-width: 767px) {
+  
+  h1, h2, h3, h4, h5, h6, p, .starter > p { width: auto; max-width: none; min-width: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
