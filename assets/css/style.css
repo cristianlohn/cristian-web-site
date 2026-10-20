@@ -73,10 +73,10 @@ li { min-width: 0; }
 .companies-list { display: flex; flex: 1; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--layout-gap); list-style: none; }
 .companies-list li { color: var(--color-text); font-size: var(--font-h3); font-weight: var(--font-weight-heading); letter-spacing: 1px; overflow-wrap: anywhere; }
 
-/* Marcas sem painéis: transparência e versão clara por filtros SVG locais. */
+/* Each company SVG includes its own monochrome treatment and transparency. */
 .companies-list .company-logo-tile { display: flex; align-items: center; justify-content: center; flex: 1 1 176px; min-width: 0; min-height: 112px; padding: var(--space-md); background: transparent; border-radius: var(--radius-sm); }
-.company-logo-tile .company-logo { width: 160px; max-width: 100%; height: 80px; object-fit: contain; filter: url("../img/company-transparency.svg#white-to-alpha"); }
-.company-logo-square .company-logo { width: 80px; filter: url("../img/company-transparency.svg#black-to-alpha"); }
+.company-logo-tile .company-logo { width: 160px; max-width: 100%; height: 80px; object-fit: contain; }
+.company-logo-square .company-logo { width: 80px; }
 @media (max-width: 767px) {
   .companies-list:has(.company-logo-tile) { flex-direction: column; align-items: stretch; }
   .companies-list .company-logo-tile { flex: none; width: auto; min-width: 0; }
